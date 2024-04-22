@@ -1,3 +1,12 @@
+@tailwind base;     /* Resets and normalizes your styles */
+@tailwind components; /* Applies Tailwind's component styles */
+@tailwind utilities; /* Loads all of Tailwind's utility classes */
+
+/* You can add additional global styles below the Tailwind directives */
+/* https://tailwindcss.com/docs/adding-base-styles */
+/* https://tailwindcss.com/docs/adding-components-styles */
+/* https://tailwindcss.com/docs/adding-utilities-styles */
+
 html,
 body {
   padding: 0;
