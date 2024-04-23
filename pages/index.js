@@ -1,5 +1,7 @@
 // pages/index.js
 import Head from 'next/head';
+import Header  from '../components/header';
+
 
 export default function Home() {
   return (
@@ -9,30 +11,50 @@ export default function Home() {
         <meta name="description" content="Experience Meets Evolution in Commercial Real Estate" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <header className="bg-white shadow">
-        <nav className="flex justify-between items-center py-6 px-10">
-          <div className="text-xl">Proxy Real Estate</div>
-          <div>
-            <a href="#" className="text-blue-600 px-4">Home</a>
-            <a href="#" className="text-blue-600 px-4">Our Concept</a>
-            <a href="#" className="text-blue-600 px-4">How It Works</a>
-            <a href="#" className="text-blue-600 px-4">About Us</a>
+      <Header/>
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <div className="relative bg-white overflow-hidden">
+          <div className="max-w-7xl mx-auto">
+            <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+              <svg className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="50,0 100,0 50,100 0,100" />
+              </svg>
+              <div className="pt-10 sm:pt-12 md:pt-16 lg:pt-20 xl:pt-28">
+                <div className="sm:text-center lg:text-left">
+                  <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                    <span className="block xl:inline">Redefining the</span> 
+                    <span className="block text-blue-600 xl:inline">Commercial Real Estate Experience</span>
+                  </h1>
+                  <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                  The world of commercial real estate is evolving rapidly, and the time-honored methods of leasing and investing need a refresh. Enter proxyrealestate.io: a vanguard of dedicated pioneers disrupting the conventional to revolutionize your real estate journey.
+                  </p>
+                  <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                    <div className="rounded-md shadow">
+                      <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                        Get Started
+                      </a>
+                    </div>
+                    <div className="mt-3 sm:mt-0 sm:ml-3">
+                      <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
+                        Learn More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
-      </header>
-
-      <main className="flex-grow container mx-auto text-center px-4">
-        <h1 className="text-5xl font-bold mt-20">Redefining the Commercial Real Estate Experience</h1>
-        <p className="mt-4 text-xl">The world of commercial real estate is evolving. Proxy Real Estate is at the forefront, merging decades of industry expertise with innovative technology to transform how real estate deals are done.</p>
-        <div className="mt-8">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-4">Get Started</button>
-          <button className="bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white py-2 px-4 border border-blue-500 rounded-full">Learn More</button>
+          <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="/proxyrealestate.jpg" alt="" />
+          </div>
         </div>
+
+        {/* Additional Content Sections */}
       </main>
 
       <footer className="bg-white p-6 text-center">
-        Copyright © 2023 Proxy Real Estate
+        Copyright © 2024 proxyrealestate.io
       </footer>
     </div>
   )
